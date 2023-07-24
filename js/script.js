@@ -1,3 +1,7 @@
-$('p').click(function() {
-    $('p').slideToggle('slow');
-}); // when click on p we want to hide p
+$('button').mouseenter(function() {
+    $(this).removeClass('makeRed').addClass('makeBlue');
+});
+
+$('button').mouseleave(function() {
+    $(this).removeClass('makeBlue').addClass('makeRed');
+});
